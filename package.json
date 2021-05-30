@@ -1,0 +1,33 @@
+{
+  "name": "aws-lambda-efs-vpc",
+  "version": "1.0.0",
+  "description": "Boilerplate templates for AWS VPC and EFS for use with Lambda functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iconifyit/aws-lambda-efs-vpc.git"
+  },
+  "keywords": [
+    "aws",
+    "amazon",
+    "cloud",
+    "vpc",
+    "efs",
+    "elasticfilesystem",
+    "lambda",
+    "aws",
+    "lambda"
+  ],
+  "author": "scott <scott@atomiclotus.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iconifyit/aws-lambda-efs-vpc/issues"
+  },
+  "homepage": "https://github.com/iconifyit/aws-lambda-efs-vpc#readme",
+  "dependencies": {
+    "aws-sdk": "^2.918.0"
+  }
+}
