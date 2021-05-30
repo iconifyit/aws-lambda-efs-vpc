@@ -49,6 +49,7 @@ Resources:
       Tags:
       - Key: Name
         Value: EFS-Lambda-VPC-Public-B
+
   PrivateSubnetA:
     Type: AWS::EC2::Subnet
     Properties:
@@ -144,34 +145,34 @@ Outputs:
     Description: VPC ID
     Value: !Ref VPC
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "vpc"]]
+      Name: MyVPC
   
   publicSubnet1ID:
     Description: Public Subnet A ID
     Value: !Ref PublicSubnetA
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "pub-sub-a"]]
+      Name: MyVPC-pub-sub-a
   
   publicSubnet2ID:
     Description: Public Subnet B ID
     Value: !Ref PublicSubnetB
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "pub-sub-b"]]
+      Name: MyVPC-pub-sub-b
 
   privateSubnet1ID:
     Description: Private Subnet A ID
     Value: !Ref PrivateSubnetA
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "priv-sub-a"]]
+      Name: MyVPC-priv-sub-a
   privateSubnet2ID:
     Description: Private Subnet B ID
     Value: !Ref PrivateSubnetB
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "priv-sub-b"]]
+      Name: MyVPC-priv-sub-b
 
   privateVPCSecurityGroup:
     Description: Default security for Lambda VPC
     Value: !GetAtt VPC.DefaultSecurityGroup
     Export:
-      Name: !Join ["-", [!Ref "AWS::StackName", "sg"]]
+      Name: MyVPC-sg
       
