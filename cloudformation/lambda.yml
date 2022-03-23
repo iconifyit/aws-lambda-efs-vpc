@@ -126,7 +126,7 @@ Resources:
               console.log('@ EVENT @', event);
               console.log('@ CONTEXT @', context);
 
-              const kMNT_PATH = event.mountPath;
+              const kMNT_PATH = "/mnt/myefs";
 
               try {
                   const content = await ping( 'https://www.google.com' );
